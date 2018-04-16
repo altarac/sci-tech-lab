@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+
+
+
+{% block body %}
+<a class="btn btn-info" href="/assessments/A11">A11</a><a class="btn btn-info" href="/assessments/A09">A09</a><a class="btn btn-info" href="/assessments/A05">A05</a><a class="btn btn-info" href="/assessments/A04">A04</a><a class="btn btn-info" href="/assessments/A03">A03</a><a class="btn btn-info" href="/assessments/A02">A02</a>
+
+
+<h1 class="text-center">CHEM-500.A09:</h1>
+<div class="row">
+
+
+  {% for i in range(1, 11) %}
+  <div class="card" style="width: 18rem;">
+    <!-- <img class="card-img-top" src="https://gph.is/2pkUxcJ" alt="Card image cap"> -->
+    <div class="card-body">
+      <h5 class="card-title">CHE-500.A09</h5>
+      <!-- <iframe width="100%" src="https://www.youtube.com/embed/qXWWgZ-nnEs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+      <p class="card-text">
+
+        <h5>POL:</h5>
+        Lorem ipsum dolor sit amet.
+      </p>
+      <a href="/chem/CHE-500.A09/ question {{i}}" class="btn btn-primary btn-block">See question {{i}}</a>
+    </div>
+  </div>
+
+    <!-- <li><a href="chem/question {{i}}">Question {{i}}</a></li> -->
+
+  {% endfor %}
+
+
+
+  {% for i in range(10, 26) %}
+  <div class="card" style="width: 18rem;">
+    <!-- <img class="card-img-top" src="https://gph.is/2pkUxcJ" alt="Card image cap"> -->
+    <div class="card-body">
+      <h5 class="card-title">CHE-500.A09</h5>
+      <!-- <iframe width="100%" src="https://www.youtube.com/embed/qXWWgZ-nnEs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+      <p class="card-text">
+
+        <h5>POL:</h5>
+        Lorem ipsum dolor sit amet.
+      </p>
+      <a href="/chem/CHE-500.A09/ long question {{i}}" class="btn btn-primary btn-block">See question {{i}}</a>
+    </div>
+  </div>
+
+    <!-- <li><a href="chem/long question {{i}}">Question {{i}}</a></li> -->
+
+  {% endfor %}
+
+
+
+
+</div>
+
+
+
+{% endblock %}
