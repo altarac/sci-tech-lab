@@ -7,10 +7,10 @@
 <a class="btn btn-info" href="/assessments/A11">A11</a><a class="btn btn-info" href="/assessments/A09">A09</a><a class="btn btn-info" href="/assessments/A05">A05</a><a class="btn btn-info" href="/assessments/A04">A04</a><a class="btn btn-info" href="/assessments/A03">A03</a><a class="btn btn-info" href="/assessments/A02">A02</a>
 
 
-<h1 class="text-center">CHEM-500.A11:</h1>
+<h1 class="text-center">CHEM-500.{{test}}: {{l}}</h1>
 <div class="row justify-content-center">
 
-  {% for i in range(1, 27) %}
+  {% for i in l %}
   <div class="col-md-7">
     <!-- <img class="card-img-top" src="https://gph.is/2pkUxcJ" alt="Card image cap"> -->
     <div>
@@ -18,19 +18,20 @@
       <!-- <iframe width="100%" src="https://www.youtube.com/embed/qXWWgZ-nnEs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
       <p>
         <h5>general concept:</h5>
-        {{test_info[0]['concepts'][i-1]}}
+        {{test_info[t]['A11 concepts'][i-1]}}
       </p>
       <p>
         <h5>POL:</h5>
-        {{test_info[0]['POL'][i-1]}}
+        {{test_info[t]['POL'][i-1]}}
       </p>
-      <a href="/chem/CHE-500.A11/question {{i}}" class="btn btn-primary btn-block">See item {{i}}</a>
+      <a href="/chem/CHE-500.{{test}}/question {{i}}" class="btn btn-primary btn-block">See item {{i}}</a>
     </div>
   </div>
 
     <!-- <li><a href="chem/question {{i}}">Question {{i}}</a></li> -->
 
   {% endfor %}
+
 
 
 </div>
